@@ -67,5 +67,23 @@ blockquote
         margin-left:2em;
         padding: 1em;
         text-indent: 5% ;
-          
+     }
+
+.seguido
+     {
+        width: 100%;  
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;  		
+        justify-content: center;
+        align-content: strech; 
+     }
+h2
+     {
+        color: #0c77db;
+        background-color: #202064;
+  /*      text-align: center; */
+        font-size: 160%;
+        padding-top: 1em;
+        padding-bottom: 1em;
      }
