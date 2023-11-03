@@ -52,7 +52,7 @@ function misteriosGloriosos()
         textoMisterio4.textContent = 'La Asunción de la Virgen María, en cuerpo y alma, al Cielo (Assumptio) «Todas las generaciones me llamarán bienaventurada porque el Señor ha hecho obras grandes en mí» (Lucas 1, 48-49). «La Santísima Virgen María, cumplió el curso de su vida terrena, fue llevada en cuerpo y alma a la gloria del cielo, en donde ella participa ya en la gloria de la resurrección de su Hijo, anticipando la resurrección de todos los miembros de su Cuerpo» (CIC, 974).';
   
         tituloMisterio5.textContent = '5º misterio. La institucion de la Eucaristia';
-        textoMisterio5.textContent = 'La Coronación celestial de la Virgen María, Reina del Firmamento (Regina del Firmamento) «Una gran señal apareció en el cielo: una mujer, vestida de sol, con la luna bajo los pies, y una corona de doce estrellas sobre su cabeza» (Ap 12, 1). «Finalmente, la Virgen inmaculada, preservada libre de toda mancha de pecado original, terminado el curso de su vida en la tierra, fue llevada a la gloria del cielo y elevada al trono por el Señor como Reina del universo, para ser conformada más plenamente a su Hijo, Señor de los Señores y vencedor del pecado y de la muerte» (CIC, 966).';
+        textoMisterio5.textContent = 'La Coronación celestial de la Virgen María, Reina del Firmamento (Regina del Firmamento)</p><blockquote>«Una gran señal apareció en el cielo: una mujer, vestida de sol, con la luna bajo los pies, y una corona de doce estrellas sobre su cabeza» (Ap 12, 1). «Finalmente, la Virgen inmaculada, preservada libre de toda mancha de pecado original, terminado el curso de su vida en la tierra, fue llevada a la gloria del cielo y elevada al trono por el Señor como Reina del universo, para ser conformada más plenamente a su Hijo, Señor de los Señores y vencedor del pecado y de la muerte» (CIC, 966).';
   } 
 
   function misteriosDolorosos ()
@@ -70,7 +70,7 @@ function misteriosGloriosos()
       textoMisterio4.textContent = 'Jesús con la cruz a cuestas camino del Calvario (Baiulatio Crucis) «Y obligaron a uno que pasaba, a Simón de Cirene, que volvía del campo, el padre de Alejandro y de Rufo, a que llevara su cruz. Lo condujeron al lugar del Gólgota, que quiere decir de la "Calavera"» (Marcos 15, 21-22).';
   
       tituloMisterio5.textContent = '5º misterio. La Crucifixión';
-      textoMisterio5.textContent = 'La crucifixión y muerte de Jesús «Llegados al lugar llamado "el Calvario", lo crucificaron allí a él y a los dos malhechores, uno a la derecha y otro a la izquierda. Jesús decía: "Padre, perdónales, porque no saben lo que hacen" El velo del Santuario se rasgó por medio y Jesús, dando un fuerte grito dijo: "Padre, en tus manos pongo mi espíritu" y, dicho esto, expiró» (Lucas 23, 33-46).';
+      textoMisterio5.textContent = 'La crucifixión y muerte de Jesús </p><blockquote>«Llegados al lugar llamado "el Calvario", lo crucificaron allí a él y a los dos malhechores, uno a la derecha y otro a la izquierda. Jesús decía: "Padre, perdónales, porque no saben lo que hacen" El velo del Santuario se rasgó por medio y Jesús, dando un fuerte grito dijo: "Padre, en tus manos pongo mi espíritu" y, dicho esto, expiró» (Lucas 23, 33-46).';
   }  
 
   function misteriosLuminosos ()
