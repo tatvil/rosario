@@ -1,0 +1,108 @@
+
+*{
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-oscuro:#000;
+    --color-medio: #ccc;
+    --color-claro: #fff;
+    --color-secundario: #e11b22;
+    --color-secundario-claro: #e1abb2;
+}
+p:first-letter
+    {
+     color:var(--color-secundario);
+     text-shadow: var(--color-oscuro);
+     text-decoration-style:double ;
+     font-size: 150%;
+    }
+
+ body
+   {
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       width: 90%;
+       margin:0 auto;
+       background-color: var(--color-claro);
+       margin-bottom: 1em;
+   }
+
+ h1
+     {
+         color: var(--color-claro);
+         background-color: var(--color-secundario);
+         font-size: 200%;
+         padding-top: 1em;
+         padding-bottom: 1em;
+         text-align: center;
+     }
+
+ h2
+     {
+        color: var(--color-secundario-claro);
+        background-color: var(--color-secundario);;
+        text-align: center;
+        font-size: 160%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-transform: uppercase;
+     }
+
+ h3
+     {
+         color: var(--color-secundario);;
+         font-size: 160%;
+         padding-top: 1em;
+         
+     }
+
+ h4
+     {
+         color: var(--color-secundario);;
+         font-size: 140%;
+         padding-top: 1em;
+     }
+
+h5
+     {
+         color: var(--color-secundario);;
+         font-size: 120%;
+         padding-top: 1em;
+     }
+
+ p
+     {
+         text-align: justify;
+         padding: .5em;
+        text-justify:auto ;
+ /*       background-color: var(--color-medio) ;   */
+        margin-left:2em;
+        padding: 1em;
+        text-indent: 1% ;
+     }
+
+.menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--color-secundario);
+      }
+      
+.menu li {
+            float: left;
+        display: block;
+        color: var(--color-claro);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: var(--color-secundario);
+      }
+      
+.menu li:hover {
+        background-color: var(--color-secundario-claro);
+      }
+
+.active {
+        border-radius: 10px;
+        color: blue;
+    }  

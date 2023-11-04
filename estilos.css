@@ -1,93 +1,90 @@
-
-*{
-    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    --color-oscuro:#000;
-    --color-medio: #777;
+/* Variables CSS */
+:root {
+    --color-oscuro: #000;
+    --color-medio: #ccc;
     --color-claro: #fff;
-    --color-secundario: #e11b22;
+    --color-secundario: #b22b2e;
     --color-secundario-claro: #e1abb2;
 }
-p:first-letter
-    {
-     color:var(--color-secundario);
-     text-shadow: var(--color-oscuro);
-     text-decoration-style:double ;
-    }
 
- body
-   {
-       font-family:Verdana, Geneva, Tahoma, sans-serif;
-       width: 90%;
-       margin:0 auto;
-       background-color: var(--color-claro);
-       margin-bottom: 1em;
-   }
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+}
 
- h1
-     {
-         color: var(--color-claro);
-         background-color: var(--color-secundario);
-         font-size: 200%;
-         padding-top: 1em;
-         text-align: center;
-         padding-bottom: 1em;
-     }
+/* Estilos generales */
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-claro);
+    margin-bottom: 1em;
+}
 
- h2
-     {
-        color: var(--color-secundario-claro);;
-        background-color: var(--color-secundario);;
-        text-align: center;
-        font-size: 160%;
-        padding-top: 1em;
-        padding-bottom: 1em;
-     }
+h1 {
+    color: var(--color-claro);
+    background-color: var(--color-secundario);
+    font-size: 200%;
+    padding: 1em 0;
+    text-align: center;
+}
 
- h3
-     {
-         color: var(--color-secundario);;
-         font-size: 160%;
-         padding-top: 1em;
-     }
+h2 {
+    color: var(--color-secundario-claro);
+    background-color: var(--color-secundario);
+    text-align: center;
+    font-size: 160%;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
 
- h4
-     {
-         color: var(--color-secundario);;
-         font-size: 140%;
-         padding-top: 1em;
-     }
+h3, h4, h5 {
+    color: var(--color-secundario);
+    font-size: 140%;
+    padding: 1em 0;
+}
 
-h5
-     {
-         color: var(--color-secundario);;
-         font-size: 120%;
-         padding-top: 1em;
-     }
+/* Estilos de párrafos */
+p {
+    text-align: justify;
+    padding: .5em;
+    text-indent: 1%;
+    margin-left: 2em;
+    padding: 1em;
+}
 
- p
-     {
-         text-align: justify;
-         text-indent: 5% ;
-         padding: .5em;
-     }
-     
-blockquote
-     {
-        text-align: justify;
-        text-justify:auto ;
-        background-color: var(--color-medio) ;
-        margin-left:2em;
-        padding: 1em;
-        text-indent: 5% ;
-     }
+p:first-letter {
+    color: var(--color-secundario);
+    text-shadow: var(--color-oscuro);
+    text-decoration-style: double;
+    font-size: 150%;
+}
 
-h2
-     {
-        color: var(--color-secundario-claro);
-        background-color: var(--color-secundario);
-        font-size: 160%;
-        padding-top: 1em;
-        padding-bottom: 1em;
-     }
+/* Estilos del menú */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-secundario);
+}
+
+.menu li {
+    float: left;
+    display: block;
+    color: var(--color-claro);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+}
+
+.menu li:hover {
+    background-color: var(--color-secundario-claro);
+}
+
+.menu .active {
+    background-color: var(--color-secundario-claro);
+    color: var(--color-secundario);
+}

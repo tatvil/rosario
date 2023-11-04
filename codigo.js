@@ -6,17 +6,26 @@ var nombreMisterio = "";
 var diaSemana = "";
 var tituloMisterio1;
 
-function visualizarCabecera()
+function visualizarCabecera(misterio,dia)
   {
-//    diaSemana.textContent=weekday[d.getDay()];
-    nombreMisterio.textContent ="MISTERIOS "+misterios[d.getDay()]+" ("+weekday[d.getDay()]+")";
+
+//    if (misterio="") misterio=misterios[d.getDay()];
+//    if (dia="") dia=weekday[d.getDay()];
+    nombreMisterio.textContent ="MISTERIOS "+misterio+" ("+dia+")";
   }
 
 function inicializarVariables ()
   {
     nombreMisterio	= document.getElementById('nombreMisterio');
-    diaSemana	    = document.getElementById('weekday');
+    diaSemana	      = document.getElementById('weekday');
     tituloMisterio1	= document.getElementById('tituloMisterio1');
+    lunes	          = document.getElementById('lunes');
+    martes	        = document.getElementById('martes');
+    miercoles	      = document.getElementById('miercoles');
+    jueves	        = document.getElementById('jueves');
+    viernes	        = document.getElementById('viernes');
+    sabado	        = document.getElementById('sabado');
+    domingo	        = document.getElementById('domingo');
     
 
     weekday[0] = "DOMINGO";   //Domingo
@@ -37,8 +46,9 @@ function inicializarVariables ()
     misterios[6] = "GOZOSOS";     //Sabado
   }
 
-function misteriosGloriosos()
+function misteriosGloriosos(dia)
     {
+        visualizarCabecera('gloriosos',dia);
         tituloMisterio1.textContent = '1º misterio. La Resurreccion de Jesucristo';
         textoMisterio1.textContent = 'La Resurrección de Cristo, al tercer día después de su entierro ("Resurrectio") «El primer día de la semana, muy de mañana, fueron al sepulcro llevando los aromas que habían preparado. Pero encontraron que la piedra había sido retirada del sepulcro, y entraron, pero no hallaron el cuerpo del Señor Jesús. No sabían que pensar de esto, cuando se presentaron ante ellas dos hombres con vestidos resplandecientes. Ellas, despavoridas, miraban al suelo, y ellos les dijeron: "¿Por qué buscáis entre los muertos al que está vivo? No está aquí, ha resucitado"» (Lucas 24, 1-6). «"Si no resucitó Cristo, vana es nuestra predicación, vana también vuestra fe" (1Cor 15, 14). La Resurrección constituye ante todo la confirmación de todo lo que Cristo hizo y enseñó» (CIC, 651).';
 
@@ -55,8 +65,9 @@ function misteriosGloriosos()
         textoMisterio5.textContent = 'La Coronación celestial de la Virgen María, Reina del Firmamento (Regina del Firmamento) «Una gran señal apareció en el cielo: una mujer, vestida de sol, con la luna bajo los pies, y una corona de doce estrellas sobre su cabeza» (Ap 12, 1). «Finalmente, la Virgen inmaculada, preservada libre de toda mancha de pecado original, terminado el curso de su vida en la tierra, fue llevada a la gloria del cielo y elevada al trono por el Señor como Reina del universo, para ser conformada más plenamente a su Hijo, Señor de los Señores y vencedor del pecado y de la muerte» (CIC, 966).';
   } 
 
-  function misteriosDolorosos ()
+  function misteriosDolorosos (dia)
   {
+      visualizarCabecera('dolorosos',dia);
       tituloMisterio1.textContent = '1º misterio. La oracion en el Huerto';
       textoMisterio1.textContent = 'La oración en el Huerto, agonía de Jesús en Getsemaní (Agonia in Hortu) «Entonces Jesús fue con ellos a un huerto, llamado Getsemaní, y dijo a sus discípulos: "Sentaos aquí mientras voy a orar". Y tomando consigo a Pedro y a los dos hijos de Zebedeo, comenzó a sentir tristeza y angustia. Entonces les dijo: "Mi alma está triste hasta el punto de morir; quedaos aquí y velad conmigo". Y adelantándose un poco, cayó rostro en tierra, y suplicaba así: "Padre mío, si es posible, que pase de mí esta copa, pero no sea como yo quiero, sino como quieras tú"» (Mateo 26, 36-39).«Este combate y esta victoria sólo son posibles con la oración. Por medio de su oración, Jesús es vencedor del Tentador, desde el principio y en el último combate de su agonía»';
 
@@ -73,8 +84,9 @@ function misteriosGloriosos()
       textoMisterio5.textContent = 'La crucifixión y muerte de Jesús «Llegados al lugar llamado "el Calvario", lo crucificaron allí a él y a los dos malhechores, uno a la derecha y otro a la izquierda. Jesús decía: "Padre, perdónales, porque no saben lo que hacen" El velo del Santuario se rasgó por medio y Jesús, dando un fuerte grito dijo: "Padre, en tus manos pongo mi espíritu" y, dicho esto, expiró» (Lucas 23, 33-46).';
   }  
 
-  function misteriosLuminosos ()
+  function misteriosLuminosos (dia)
     {
+      visualizarCabecera('luminosos',dia);
       tituloMisterio1.textContent = '1º misterio. El Bautismo de Jesus en el rio Jordan';
       textoMisterio1.textContent = '«Bautizado Jesús, salió luego del agua; y en esto se abrieron los cielos y vio al Espíritu de Dios que bajaba en forma de paloma y venía sobre él. Y una voz que salía de los cielos decía: "Este es mi Hijo amado, en quien me complazco"». (Mateo 3,16-17) «El comienzo de la vida pública de Jesús es su bautismo por Juan en el Jordán. Juan proclamaba "un bautismo de conversión para el perdón de los pecados" (Lucas 3, 3)» (CIC, 535).';
 
@@ -91,13 +103,15 @@ function misteriosGloriosos()
       textoMisterio5.textContent = 'La institución de la Eucaristía en el Cenáculo de Jerusalén en la tarde del Jueves Santo (Eucharistiae institutio) «Mientras cenaban, Jesús tomó en sus manos el pan, y habiendo dado gracias a Dios lo partió y se lo dio a los discípulos, diciendo: "Tomad, comed, esto es mi cuerpo". Luego tomó en sus manos una copa, y habiendo dado gracias a Dios la pasó a ellos, diciendo: "Bebed todos de esta copa, porque esto es mi sangre, con la que se confirma el pacto, la cual es derramada en favor de muchos para perdón de sus pecados".» (Mateo 26, 26-28).«Al celebrar la última Cena con sus apóstoles en el transcurso del banquete pascual, Jesús dio su sentido definitivo a la pascua judía. En efecto, el paso de Jesús a su Padre por su muerte y su resurrección, la Pascua nueva, es anticipada en la Cena y celebrada en la Eucaristía que da cumplimiento a la pascua judía y anticipa la pascua final de la Iglesia en la gloria del Reino» (CIC, 1.341).';
   }  
 
-  function misteriosGozosos ()
+  function misteriosGozosos (dia)  // Lunes y sabados
     {
+      visualizarCabecera('gozosos',dia);
+
       tituloMisterio1.textContent = '1º misterio. La anunciación';
       textoMisterio1.textContent = 'La Anunciación a la Virgen María y la Encarnación del Verbo «Al sexto mes el Ángel Gabriel fue enviado por Dios a una ciudad de Galilea, llamada Nazaret, a una virgen desposada con un hombre llamado José, de la estirpe de David, el nombre de la virgen era María» (Lucas 1,26-27). «La anunciación de María inaugura la plenitud de "los tiempos" (Gálatas 4,4), es decir, el cumplimiento de las promesas y de los preparativos» (CIC, 484).';
 
       tituloMisterio2.textContent = '2º misterio. La Visita';
-      textoMisterio2.textContent = 'La Visita de Nuestra Señora a su prima Santa Isabel. </strong></p><blockquote>«En aquellos días María se puso en camino y fue de prisa a la región montañosa, a una ciudad de Judá; entró en casa de Zacarías y saludó a Isabel. Y sucedió que, en cuanto Isabel oyó el saludo de María, saltó de gozo el niño en su vientre, e Isabel quedó llena de Espíritu Santo; y exclamando a voz en grito, dijo: "Bendita tú entre las mujeres y bendito el fruto de tu vientre"» (Lucas 1, 39-42) </blockquote><p>«La "visita" de María a Isabel se convirtió así en visita de Dios a su pueblo» (CIC, 717)';
+      textoMisterio2.textContent = 'La Visita de Nuestra Señora a su prima Santa Isabel. «En aquellos días María se puso en camino y fue de prisa a la región montañosa, a una ciudad de Judá; entró en casa de Zacarías y saludó a Isabel. Y sucedió que, en cuanto Isabel oyó el saludo de María, saltó de gozo el niño en su vientre, e Isabel quedó llena de Espíritu Santo; y exclamando a voz en grito, dijo: "Bendita tú entre las mujeres y bendito el fruto de tu vientre"» (Lucas 1, 39-42) </blockquote><p>«La "visita" de María a Isabel se convirtió así en visita de Dios a su pueblo» (CIC, 717)';
 
       tituloMisterio3.textContent = '3º misterio. El Nacimiento del hijo de Dios';
       textoMisterio3.textContent = 'El Nacimiento de Jesús En Belén (Nativitas) «Sucedió que por aquellos días salió un edicto de César Augusto ordenando que se empadronase todo el mundo. Este primer empadronamiento tuvo lugar siendo Cirino gobernador de Siria. Iban todos a empadronarse, cada uno a su ciudad. Subió también José desde Galilea, de la ciudad de Nazaret, a Judea, a la ciudad de David, que se llama Belén, por ser él de la casa y familia de David, para empadronarse con María, su esposa, que estaba encinta. Y sucedió que, mientras ellos estaban allí, se le cumplieron los días del alumbramiento, y dio a luz a su hijo primogénito, lo envolvió en pañales y lo acostó en un pesebre, porque no tenían sitio en el alojamiento» (Lucas 2,1-7). Jesús nació en la humildad de un establo, de una familia pobre (cf. Lc 2, 6-7); aquellos sencillos pastores son los primeros testigos del acontecimiento. En esta pobreza se manifiesta la gloria del cielo» (CIC, 525).'
@@ -109,38 +123,67 @@ function misteriosGloriosos()
       textoMisterio5.textContent = 'Jesús encontrado por sus padres cuando era niño hablando con los Doctores de la Ley. «Sus padres iban todos los años a Jerusalén a la fiesta de la Pascua. Cuando tuvo doce años, subieron ellos como de costumbre a la fiesta y, al volverse, pasados los días, el niño Jesús se quedó en Jerusalén, sin saberlo sus padres. Y sucedió que al cabo de tres días, le encontraron en el Templo sentado en medio de los maestros, escuchándoles y preguntándoles; todos los que le oían, estaban estupefactos por su inteligencia y sus respuestas» (Lucas 2, 41-47) «El hallazgo de Jesús en el Templo es el único suceso que rompe el silencio de los Evangelios sobre los años ocultos de Jesús. Jesús deja entrever en ello el misterio de su consagración total a una misión derivada de su filiación divina: "¿No sabíais que me debo ocupar de los asuntos de mi Padre?"» (CIC, 534).';
    }  
 
-
-
-function visualizarMisterios()
+function desactivarMenus()
   {
-        switch (d.getDay())
+    lunes.classList.remove("active");
+    martes.classList.remove("active");
+    miercoles.classList.remove("active");
+    jueves.classList.remove("active");
+    viernes.classList.remove("active");
+    sabado.classList.remove("active");
+    domingo.classList.remove("active");
+  }
+
+function visualizarMisterios(dia)
+  {
+    desactivarMenus();
+    switch (dia)
           {
             case 0 :
-                misteriosGloriosos();
-                break;
+              misteriosGloriosos('domingo');
+              domingo.classList.add("active");
+              break;
             case 1:
-                misteriosGozosos();
-                break;
+              misteriosGozosos('lunes');
+              lunes.classList.add("active");
+              break;
             case 2:
-                misteriosDolorosos();
-                break;
+              misteriosDolorosos('martes');
+              martes.classList.add("active");
+              break;
             case 3 :
-                misteriosGloriosos();
-                break;
+              misteriosGloriosos('miercoles');
+              miercoles.classList.add("active");
+              break;
             case 4:
-                misteriosLuminosos();
-                break;
+              misteriosLuminosos('jueves');
+              jueves.classList.add("active");
+              break;
             case 5:
-                misteriosDolorosos();
-                break;
+              misteriosDolorosos('viernes');
+              viernes.classList.add("active");
+              break;
             case 6:
-                misteriosGozosos();
-                break;
+              misteriosGozosos('sabado');
+              sabado.classList.add("active");
+              break;
           }
     };
 
+function setListeners()
+    {
+    lunes.addEventListener('click', () => visualizarMisterios(1));
+    martes.addEventListener('click',() => visualizarMisterios(2));
+    miercoles.addEventListener('click', () => visualizarMisterios(3));
+    jueves.addEventListener('click', () => visualizarMisterios(4));
+    viernes.addEventListener('click', () => visualizarMisterios(5));
+    sabado.addEventListener('click', () => visualizarMisterios(6));
+    domingo.addEventListener('click', () => visualizarMisterios(0));
+    }
+
 window.addEventListener("load",() => {
     inicializarVariables ();
-    visualizarCabecera();
-    visualizarMisterios();
+    visualizarCabecera(misterios[d.getDay()],weekday[d.getDay()]);
+    visualizarMisterios(d.getDay());
+    setListeners();
 });
