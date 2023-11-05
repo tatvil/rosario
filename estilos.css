@@ -17,7 +17,7 @@
 /* Estilos generales */
 body {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;                           
     background-color: var(--color-claro);
     margin-bottom: 1em;
 }
@@ -43,7 +43,32 @@ h3, h4, h5 {
     color: var(--color-secundario);
     font-size: 140%;
     padding: 1em 0;
+    text-align: center;
 }
+
+/* Estilos generales para la imagen */
+.imagenMisterio 
+  {
+    display: block;
+    margin: auto;
+  }
+  
+  /* Estilos para pantalla de escritorio (ancho mayor a 768px) */
+  @media (min-width: 769px) 
+  {
+    .imagenMisterio {
+      max-width: 30%; /* Ajusta el ancho máximo según tus necesidades. */
+      max-height: auto; /* Para mantener la proporción original. */
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas (menos de 769px) */
+  @media (max-width: 768px) {
+    .imagenMisterio {
+      max-width: 90%; /* Ajusta el ancho máximo según tus necesidades. */
+      max-height: auto; /* Para mantener la proporción original. */
+    }
+  }
 
 /* Estilos de párrafos */
 p {
@@ -62,6 +87,14 @@ p:first-letter {
 }
 
 /* Estilos del menú */
+.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -87,4 +120,9 @@ p:first-letter {
 .menu .active {
     background-color: var(--color-secundario-claro);
     color: var(--color-secundario);
+}
+
+.misterios
+{
+    margin-top: 300px;
 }
