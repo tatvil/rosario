@@ -36,3 +36,5 @@ Los misterios del Rosario son episodios o eventos de la vida de Jesús y la Virg
 Cada día de la semana se asocia a una categoría de misterios, pero puedes rezar cualquier categoría de misterios en cualquier día según tus preferencias y necesidades espirituales. La oración del Rosario es una manera significativa de meditar en la vida de Jesús y María, y cada misterio nos invita a profundizar en la fe cristiana.
 
 El programa está hecho, para que mediante javaScript elija el dia de los misterios que tocan el día de la semana actual y te muestre los misterios correspondientes
+
+Si quieres ver como funciona, puedes verlo en http://www.recursos-catolicos.es/rosario/index.html
